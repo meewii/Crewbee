@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 			<html class="no-js lt-ie9" lang="en" > 	<![endif]-->
+<!--[if gt IE 8]><!--> 	<html class="no-js" lang="en" > 		<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Let's make a shark with lasers</title>
+
+	<link rel="stylesheet" href="css/normalize.css" />
+
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/app.css" />
+	<link rel="stylesheet" href="css/general_foundicons.css">
+	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/joyride.css">
+
+
+	<script src="js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+
+<div class="contain-to-grid bee-nav">
+	<nav class="top-bar">
+	  <ul class="title-area">
+	    <li class="name">
+	     <img src='./img/crewbee.svg' type='image/svg+xml' alt="Crewbee" />
+	    </li>
+	    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	  </ul>
+	
+
+	  <section class="top-bar-section">
+	    <ul class="left">
+			<li><a href="#">Browse projects</a></li>
+			<li id="placeholder04"><a href="#">Create projects</a></li>
+	    </ul>
+	    <ul class="right">
+	      <li><a href="#">Register</a></li>
+	      <li><a href="#">Login</a></li>
+	    </ul>
+	  </section>
+	</nav>
+	<div style="clear: both"></div>
+</div>
+
+
+
+<div class="row">
+	<div class="large-12 columns bee-p-left" style="margin-bottom: 200px">
+		<div style="position:relative">
+		<div id="placeholder00" style="position:absolute; left: 10px; top:0"></div>
+		<img class="bee-header-img" src="img/header.png" style="width: 100%" />
+		</div>
+		<div style="position:relative">
+		<div id="placeholder01" style="position:absolute; left: 680px; top:120px"></div>
+		<img class="bee-header-img" src="img/subheader.png" style="width: 100%" />
+		</div>
+		<div style="position:relative">
+		<a href="project.html"><img class="bee-header-img" src="img/comingsoon.png" style="width: 100%" /></a>
+		<div id="placeholder02" style="position:absolute; left: 680px;"></div>
+		</div>
+		<div style="position:relative">
+		<div id="placeholder03" style="position:absolute; left: 425px; top:455px"></div>
+		<img class="bee-header-img" src="img/three_boxes.png" style="width: 100%" style="margin-bottom: 120px" />
+		</div>
+	</div>
+</div>
+
+ <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  	
+
+  <script src="js/foundation.min.js"></script>
+  
+  
+<ol class="joyride-list" data-joyride>
+  <li data-id="placeholder00" data-button="Next">
+       <p>Crewbee is a place for your DIY projects.</p>
+  </li>
+  <li data-id="placeholder04" data-class="custom so-awesome" data-text="Next">
+    	<p>Create your own project.</p>
+  </li>
+  <li data-id="placeholder01" data-class="custom so-awesome" data-text="Next">
+    	<p>Or find makers in your area.</p>
+  </li>
+  <li data-id="placeholder02" data-class="custom so-awesome" data-text="Next">
+    	<p>Exciting projects are waiting for you!</p>
+  </li>
+  <li data-id="placeholder03" data-button="Next">
+    <p>There something for everyone.</p>
+  </li>
+</ol>
+  
+<script>
+  $(document)
+  
+    .foundation()
+    .foundation('joyride', 'start');
+  
+
+  // For Kitchen Sink Page
+  $('#start-jr').on('click', function() {
+    $(document).foundation('joyride','start');
+  });
+</script>
+	
+
+  	
+</body>
+</html>

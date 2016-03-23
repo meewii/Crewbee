@@ -1,0 +1,12 @@
+.joyride-tip-guide p {
+	font-size: 1.4em;
+	margin:0 0 10px;
+}
+.joyride-content-wrapper {
+	background-color: #333;
+}
+.joyride-tip-guide .joyride-nub.top {
+    border-color: #333;
+}
+
+.joyride-tip-guide p {}

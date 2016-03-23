@@ -1,0 +1,106 @@
+.button, .button:active, .button:hover{
+	border-radius: 5px; /* border radius */
+	inner-shadow: none;
+	background-color: #6fb935; /* layer fill content */
+	-moz-box-shadow: 0 5px 0 #599f23; /* drop shadow */
+	-webkit-box-shadow: 0 5px 0 #599f23; /* drop shadow */
+	box-shadow: 0 5px 0 #599f23; /* drop shadow */
+	border: none;
+	-webkit-transition: background-color 50ms ease-out;
+    -moz-transition: background-color 50ms ease-out;
+    transition: background-color 50ms ease-out; 
+}
+
+
+.button.bee-p-join{
+	background-color: #6fba36;
+	
+	text-shadow: 0 -1px #599f23;
+}
+	.button.bee-p-join:hover{
+		background-color: #82d741;
+		-moz-box-shadow: 0 5px 0 #6fba36; /* drop shadow */
+		-webkit-box-shadow: 0 5px 0 #6fba36; /* drop shadow */
+		box-shadow: 0 5px 0 #6fba36; /* drop shadow */
+	}
+	.button.bee-p-join:active{
+		top:5px;
+		background-color: #82d741;
+		counter-resetmoz-box-shadow: none; /* drop shadow */
+		-webkit-box-shadow: none; /* drop shadow */
+		box-shadow: none; /* drop shadow */
+	}
+.button.bee-p-qsend{
+	background-color: #429fb7;
+	-moz-box-shadow: 0 5px 0 #23869d; /* drop shadow */
+	-webkit-box-shadow: 0 5px 0 #23869d; /* drop shadow */
+	box-shadow: 0 5px 0 #23869d; /* drop shadow */
+	text-shadow: 0 -1px #23869d;
+	
+}
+	.button.bee-p-qsend:hover{
+		background-color: #57b0c8;
+		-moz-box-shadow: 0 5px 0 #429fb7; /* drop shadow */
+		-webkit-box-shadow: 0 5px 0 #429fb7; /* drop shadow */
+		box-shadow: 0 5px 0 #429fb7; /* drop shadow */
+	}
+	.button.bee-p-qsend:active{
+		top:5px;
+		background-color: #57b0c8;
+		-moz-box-shadow: none; /* drop shadow */
+		-webkit-box-shadow: none; /* drop shadow */
+		box-shadow: none; /* drop shadow */
+	}
+
+.button.bee-p-danger{
+	background-color: #bf4631;
+	-moz-box-shadow: 0 5px 0 #a22b1c; /* drop shadow */
+	-webkit-box-shadow: 0 5px 0 #a22b1c; /* drop shadow */
+	box-shadow: 0 5px 0 #a22b1c; /* drop shadow */
+	text-shadow: 0 -1px #a22b1c;
+	
+}
+	.button.bee-p-danger:hover{
+		background-color: #de4f33;
+		-moz-box-shadow: 0 5px 0 #bf4631; /* drop shadow */
+		-webkit-box-shadow: 0 5px 0 #bf4631; /* drop shadow */
+		box-shadow: 0 5px 0 #bf4631; /* drop shadow */
+	}
+	.button.bee-p-danger:active{
+		top:5px;
+		background-color: #de4f33;
+		-moz-box-shadow: none; /* drop shadow */
+		-webkit-box-shadow: none; /* drop shadow */
+		box-shadow: none; /* drop shadow */
+	}
+
+.button.bee-p-secondary{
+	background-color: #e6e6e6;
+	color: #2b7f91;
+	text-shadow: 0 1px #fff;
+	-moz-box-shadow: 0 5px 0 #bbb; /* drop shadow */
+	-webkit-box-shadow: 0 5px 0 #bbb; /* drop shadow */
+	box-shadow: 0 5px 0 #bbb; /* drop shadow */
+	text-shadow: 0 -1px #bbb;
+	
+}
+	.button.bee-p-secondary:hover{
+		background-color: #eaeaea;
+		-moz-box-shadow: 0 5px 0 #bbb; /* drop shadow */
+		-webkit-box-shadow: 0 5px 0 #bbb; /* drop shadow */
+		box-shadow: 0 5px 0 #bbb; /* drop shadow */
+	}
+	.button.bee-p-secondary:active{
+		top:5px;
+		background-color: #eaeaea;
+		-moz-box-shadow: none; /* drop shadow */
+		-webkit-box-shadow: none; /* drop shadow */
+		box-shadow: none; /* drop shadow */
+	}
+
+.bee-medium-avatar{
+	height: 58px;
+	width: 58px;
+	border-radius: 5px;
+	display: inline-block;
+}

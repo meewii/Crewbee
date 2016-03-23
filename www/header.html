@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 			<html class="no-js lt-ie9" lang="en" > 	<![endif]-->
+<!--[if gt IE 8]><!--> 	<html class="no-js" lang="en" > 		<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Let's make a shark with lasers</title>
+
+	<link rel="stylesheet" href="css/normalize.css" />
+
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/app.css" />
+	<link rel="stylesheet" href="css/buttons.css" />
+	<link rel="stylesheet" href="css/general_foundicons.css">
+	
+
+	<script src="js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+
+<div class="contain-to-grid bee-nav">
+	<nav class="top-bar">
+	  <ul class="title-area">
+	    <li class="name">
+	      <h1><a href="#">Crewbee</a></h1>
+	    </li>
+	    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	  </ul>
+
+	  <section class="top-bar-section">
+	    <!-- Left Nav Section -->
+	    <ul class="left">
+			<li class="has-dropdown"><a href="#">Browse projects</a>
+				<ul class="dropdown">
+					<li><a href="#">Programming</a></li>
+					<li><a href="#">Hardware hack</a></li>
+					<li><a href="#">Art &amp; craft</a></li>
+					<li><a href="#">Electronics</a></li>
+					<li><a href="#">Cooking</a></li>
+					<li><a href="#">Music</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Create projects</a></li>
+	    </ul>
+
+	    <!-- Right Nav Section -->
+	    <ul id="_bee-nav-btn" class="right">
+	      <li><a href="#" data-reveal-id="_bee-register">Register</a></li>
+	      <li><a href="#" data-reveal-id="_bee-login">Login</a></li>
+	    </ul>
+	    <ul id="_bee-nav-user" class="right" style="display:none">
+	    	<li><a href="#"></a></li>
+	    </ul>
+	  </section>
+	</nav>
+	<div style="clear: both"></div>
+</div>
+
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.reveal.js"></script>  
+  
+  <script>
+    $(document).foundation();
+  </script>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		$.noConflict();
+
+		jQuery(function(){
+	    	jQuery("#_bee-submit").click(function(){
+	    		
+	    		var beeusername = jQuery('#_bee-frm-name').val();
+	    		console.log(beeusername);
+
+		    	jQuery("#_bee-nav-btn").hide();
+		    	jQuery("#_bee-nav-user a").text('Hello ' + beeusername + '!');
+		    	jQuery("#_bee-nav-user").fadeIn('fast');
+
+		    	$('#_bee-login').foundation('reveal', 'close');
+
+	    	});
+	    });
+
+	</script>
+
+
+<div id="_bee-login" class="reveal-modal small">
+	<h2>Login</h2>
+ 
+	
+    <label for="_bee-frm-name">Username</label>
+    <input id="_bee-frm-name" type="text" />
+
+    <label for="_bee-frm-name">Password</label>
+    <input id="_bee-frm-name" type="password" />
+
+    <button class="bee-p-qsend button" id="_bee-submit">Login In</button>
+
+
+
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="_bee-register" class="reveal-modal small">
+  <h2>Register</h2>
+  <p class="lead">Become a member of the hive</p>
+  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+</body>
+</html>
